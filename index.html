@@ -131,7 +131,37 @@
     </div>
 
     <form action="https://formspree.io/f/mleykpze" method="POST">
-        
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="userid">Github userID:</label>
+      <input type="text" id="userid" name="userid" required />
+
+      <label for="speciality">Speciality:</label>
+      <select id="speciality" name="speciality" required>
+        <option value="">Select one only</option>
+        <option value="1">Frontend</option>
+        <option value="2">Backend</option>
+        <option value="3">UI/UX Designing</option>
+        <option value="4">Open for all</option>
+      </select>
+      <label for="stack">Tech stack:</label>
+      <select id="stack" name="stack" required>
+        <option value="">Select one only</option>
+        <option value="1">MERN</option>
+        <option value="2">PERN</option>
+        <option value="3">MEAN</option>
+        <option value="4">Open for all</option>
+      </select>
+
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" required />
       <input type="submit" value="Apply Now" />
       <a href="https://lupleg.website/privacy-policy">Privacy Policy</a> |
       <a href="https://github.com/Lupleg">Community</a> |
