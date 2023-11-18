@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        text-align: center;
+        padding: 20px 0;
+        background-color: #333;
+        color: #fff;
+      }
+
+      header h1 {
+        margin: 0;
+      }
+
+      form {
+        max-width: 600px;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
+
+      input,
+      textarea,
+      select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+    <title>Internship Application Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Internship Application Form</h1>
+      <img src="/assets/Lupleg_Log_white.png" alt="Lupleg Logo" width="150" />
+    </header>
+
+    <form action="#" method="POST">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="university">University:</label>
+      <input type="text" id="university" name="university" required />
+
+      <label for="major">Major:</label>
+      <input type="text" id="major" name="major" required />
+
+      <label for="year">Year of Study:</label>
+      <select id="year" name="year" required>
+        <option value="">Select Year</option>
+        <option value="1">First Year</option>
+        <option value="2">Second Year</option>
+        <option value="3">Third Year</option>
+        <option value="4">Fourth Year</option>
+        <option value="5">Graduated</option>
+      </select>
+
+      <label for="availability">Are you Available:</label>
+      <textarea
+        id="availability"
+        name="availability"
+        rows="4"
+        required
+      ></textarea>
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
