@@ -4,6 +4,8 @@ import bodyParser from 'body-parser';
 import cookieParser from 'cookie-parser';
 import compression from 'compression';
 import cors from 'cors';
+import mongoose from 'mongoose';
+
 
 const app = express();
 
@@ -22,4 +24,10 @@ const server = http.createServer(app);
 server.listen(8080, () =>{
     console.log('server is running on http://localhost:8080');
 })
+
+const MONGO_URL = "mongodb+srv://postman:postman@postman.uho4wop.mongodb.net/?retryWrites=true&w=majority"
+
+mongoose.Promise = Promise;
+
+
 
