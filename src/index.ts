@@ -28,6 +28,11 @@ server.listen(8080, () =>{
 const MONGO_URL = "mongodb+srv://postman:postman@postman.uho4wop.mongodb.net/?retryWrites=true&w=majority"
 
 mongoose.Promise = Promise;
+mongoose.connect(MONGO_URL)
+
+mongoose.connection.on('error', (error: Error) => {
+    console.log(error);
+})
 
 
 
