@@ -27,8 +27,7 @@ server.listen(8080, () => {
   console.log("server is running on http://localhost:8080");
 });
 
-const MONGO_URL = "mongodb://localhost:27017/postmanapi"
-//   "mongodb+srv://postman:postman@postman.uho4wop.mongodb.net/?retryWrites=true&w=majority"
+const MONGO_URL = "mongodb://localhost:27017/post"
 
 mongoose.Promise = Promise;
 mongoose.connect(MONGO_URL);
