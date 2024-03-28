@@ -1,7 +1,7 @@
 export default {
-  logo: <strong>Nextra Demo</strong>,
+  logo: <strong>Lupleg Docs</strong>,
   project: {
-    link: "https://github.com/sankthomas/nextra-yt-demo",
+    link: "https://github.com/lupleg-dev",
   },
   useNextSeoProps() {
     return {
@@ -9,9 +9,7 @@ export default {
     };
   },
   footer: {
-    text: "Copyright Thomas Sankara 2024",
+    text: "Copyright Lupleg Developer 2024",
   },
-  chat: {
-    link: "https://discord.com",
-  },
+  
 };

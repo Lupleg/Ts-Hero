@@ -1,11 +1,11 @@
 {
-  "index": "Homepage",
+  "index": "Home",
   "getting-started-with-nextjs": "Getting Started",
   "cloud-development": "Cloud Development",
   "contact": {
-    "title": "Contact Me",
+    "title": "Contact",
     "type": "page",
-    "href": "https://youtube.com/tsbsankara",
+    "href": "https://youtube.com/lupleg",
     "newWindow": true
   },
   "about": {
