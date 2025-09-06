@@ -1,0 +1,74 @@
+{
+  "name": "typehero",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "checks": "turbo format lint typecheck --continue",
+    "checks:fix": "turbo format:fix lint:fix typecheck --continue --force",
+    "clean": "turbo clean && rm -rf node_modules && rm -rf .turbo",
+    "check:solutions": "tsx ./challenges/validate.ts",
+    "db:push": "turbo db:push",
+    "db:reset": "turbo db:reset",
+    "db:sc": "turbo db:sync-challenges",
+    "db:seed": "turbo db:reset && turbo db:seed",
+    "db:prod:seed": "turbo db:reset && turbo db:prod:seed",
+    "db:studio": "turbo db:studio",
+    "dev": "turbo dev --concurrency=1000",
+    "dl-git": "turbo dl-git",
+    "dl-monaco:force": "turbo dl-monaco",
+    "format": "prettier . \"!./apps/**\" \"!./packages/**\" \"!./tooling/**\" \"!challenges/**/tests.ts\" --check --cache --cache-location=\"node_modules/.cache/prettiercache\"",
+    "format:fix": "prettier . \"!./apps/**\" \"!./packages/**\" \"!./tooling/**\" \"!challenges/**/tests.ts\" --write --cache --cache-location=\"node_modules/.cache/prettiercache\" --log-level=warn",
+    "lint": "eslint . --max-warnings 0",
+    "lint:markdown": "markdownlint-cli2 \"challenges/**/*.md\" \"#**/node_modules\" && cspell challenges/** --no-progress",
+    "lint:markdown:validate": "tsx challenges/validate.ts",
+    "lint:fix": "eslint . --fix --max-warnings 0",
+    "package-check": "pnpm dlx sherif@latest --ignore-rule root-package-dependencies",
+    "package-check:fix": "pnpm dlx sherif@latest --ignore-rule root-package-dependencies --fix",
+    "refresh": "turbo db:reset db:seed --concurrency=1",
+    "test:e2e": "turbo test:e2e",
+    "test:e2e:install": "playwright install",
+    "test:e2e:ui": "turbo test:e2e:ui",
+    "test:e2e:inspector": "turbo test:e2e:inspector",
+    "tunnel": "cloudflared tunnel --url http://localhost:3000",
+    "typecheck": "turbo typecheck --continue"
+  },
+  "devDependencies": {
+    "ajv": "^8.12.0",
+    "cspell": "^7.3.8",
+    "markdownlint-cli2": "^0.10.0",
+    "picocolors": "^1.0.0",
+    "prettier": "^3.1.1",
+    "prettier-plugin-tailwindcss": "^0.5.9",
+    "tsx": "4.19.0",
+    "turbo": "^2.0.12",
+    "type-testing": "0.2.0",
+    "typescript": "^5.3.3",
+    "vitest": "^0.34.6"
+  },
+  "packageManager": "pnpm@9.6.0",
+  "pnpm": {
+    "overrides": {
+      "@auth/core": "0.37.4",
+      "@typescript-eslint/eslint-plugin": "8.16.0",
+      "@typescript-eslint/parser": "8.16.0",
+      "@types/react": "npm:types-react@rc",
+      "@types/react-dom": "19.1.0",
+      "react-is": "19.0.0"
+    },
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "monaco-editor"
+      ]
+    },
+    "patchedDependencies": {
+      "monaco-editor@0.52.2": "patches/monaco-editor@0.52.2.patch"
+    }
+  },
+  "dependencies": {
+    "next": "15.3.1",
+    "pnpm": "^8.15.8",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  }
+}
