@@ -1,0 +1,16 @@
+{
+  "extends": [
+    "//"
+  ],
+  "globalEnv": [
+    "GH_TOKEN"
+  ],
+  "tasks": {
+    "dl-monaco": {
+      "cache": false
+    },
+    "dl-git": {
+      "cache": false
+    }
+  }
+}
