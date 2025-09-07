@@ -5,7 +5,7 @@
 [trash-discord]: https://discord.gg/WjZhvVbFHM
 
 To contribute you will first need to fork the repo and make some adjustments to
-get it up and running on your local machine. Below are the steps to follow for you to get TypeHero to run on your local machine.
+get it up and running on your local machine. Below are the steps to follow for you to get lupleg to run on your local machine.
 
 ### 1. Create a `.env` file
 
@@ -53,7 +53,7 @@ then copy in the secrets (legacy, not SDK v7+) into your `.env`.
 In the end your local `.env` file should look something like the following
 
 ```
-DATABASE_URL="mysql://dev:dev@localhost/typehero"
+DATABASE_URL="mysql://dev:dev@localhost/lupleg"
 GITHUB_ID=very_real_github_id
 GITHUB_SECRET=very_real_secret
 
@@ -197,10 +197,10 @@ command and then run `db:seed`.
   If you are using the docker setup for your local environment then get into the container with
 
 ```sh
-docker exec -it typehero-db bash
+docker exec -it lupleg-db bash
 # we are in the container from here on
-$ mysql -u dev -p -h 127.0.0.1 typehero
-> drop database typehero;
+$ mysql -u dev -p -h 127.0.0.1 lupleg
+> drop database lupleg;
 ```
 
 Exit out of the container and then run
@@ -217,7 +217,7 @@ This tends to resolve the issue as it entirely destroys and rebuilds + reseeds t
   <summary>How do I use the `@vercel/toolbar` locally?</summary>
   If you have access to the vercel project then you can run `vercel link` (make sure you have the vercel CLI).
 
-Follow the interactive CLI to link it to the Trash Company/typehero project.
+Follow the interactive CLI to link it to the Trash Company/lupleg project.
 
 From there on out you should be able to read and make comments while on local host for that branch.
 

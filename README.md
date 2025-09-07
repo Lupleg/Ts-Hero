@@ -1,14 +1,14 @@
 <p align=center >
-  <img alt="GitHub" height=20 src="https://img.shields.io/github/stars/typehero/typehero?style=&logo=github&logoColor=white&label=Stars&labelColor=%23111&color=%23111" />
+  <img alt="GitHub" height=20 src="https://img.shields.io/github/stars/lupleg/lupleg?style=&logo=github&logoColor=white&label=Stars&labelColor=%23111&color=%23111" />
   <a href="https://discord.gg/WjZhvVbFHM" target="_parent">
     <img alt="Discord" height=20 src="https://img.shields.io/discord/796594544980000808?style=&logo=discord&logoColor=white&label=%20&labelColor=%237389D8&color=%237389D8" />
   </a>
-  <a href="https://twitter.com/typeheroapp" target="_parent">
-    <img alt="Twitter" height=20 src="https://img.shields.io/twitter/follow/typeheroapp.svg?style=&logo=twitter&logoColor=white&label=@typeheroapp&labelColor=%231DA1F2&color=%231DA1F2" />
+  <a href="https://twitter.com/luplegapp" target="_parent">
+    <img alt="Twitter" height=20 src="https://img.shields.io/twitter/follow/luplegapp.svg?style=&logo=twitter&logoColor=white&label=@luplegapp&labelColor=%231DA1F2&color=%231DA1F2" />
   </a>
 </p>
 
-![typehero header](./media/og-hub-banner.webp)
+![lupleg header](./media/og-hub-banner.webp)
 
 ### 👋 About Us
 
@@ -61,7 +61,7 @@ If you find our project interesting and want to support us please consider spons
       </a>
     </td>
     <td>
-      <a href="https://www.surgehq.ai/?utm_campaign=oss&utm_source=typehero" target="_parent">
+      <a href="https://www.surgehq.ai/?utm_campaign=oss&utm_source=lupleg" target="_parent">
         <img src="./media/surge.svg" alt="surge logo" title="Surge HQ" width="150">
       </a>
     </td>
