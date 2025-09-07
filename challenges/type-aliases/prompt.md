@@ -49,7 +49,7 @@ Wait! What's going on? `landSpacecraft` specifically asked for `Meters` but clea
 
 Be careful that you understand that TypeScript is a _structural type system_. One result of this is that primitive types are _not_ something known as ["opaque types"](https://en.wikipedia.org/wiki/Opaque_data_type). To TypeScript, everything that's an alias for a number is still a number.
 
-There actually is an idiomatic TypeScript way to design this, but it requires another concept covered in another challenge on [type unions](https://typehero.dev/challenge/type-unions).
+There actually is an idiomatic TypeScript way to design this, but it requires another concept covered in another challenge on [type unions](https://lupleg.dev/challenge/type-unions).
 
 ## How To Create Type Aliases
 
@@ -87,6 +87,6 @@ If the answer is yes, then you should probably not make an alias for `Rows`. Thi
 
 To solve this challenge, make type aliases for `Name`, `Year`, `Payload`, (and maybe others!) until there are no errors in the tests. You may need to read the tests and create some new type aliases from scratch.
 
-> As you continue your journey with TypeScript (and TypeHero!) you should get into the habit of closely consulting tests as you go. The tests can help you ensure that your implementation is correct, and quite often that means filling in missing pieces in your implementation.
+> As you continue your journey with TypeScript (and lupleg!) you should get into the habit of closely consulting tests as you go. The tests can help you ensure that your implementation is correct, and quite often that means filling in missing pieces in your implementation.
 
 `Name` is started here for you as an example.
