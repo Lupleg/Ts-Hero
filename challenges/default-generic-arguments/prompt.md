@@ -60,5 +60,5 @@ The second type, `TSConfig`, should feel a bit difficult, but if you get stuck, 
 ### small hint
 
 1. Start with a literal object as the parameter default.
-1. Use [indexed types](https://typehero.dev/challenge/indexed-types).
-1. The error you'll see is because of a missing [generic constraint](https://typehero.dev/challenge/generic-type-constraints).
+1. Use [indexed types](https://lupleg.dev/challenge/indexed-types).
+1. The error you'll see is because of a missing [generic constraint](https://lupleg.dev/challenge/generic-type-constraints).
