@@ -1,12 +1,12 @@
 ## `typeof`: A Bridge Between Worlds
 
-Have we said thank you, yet, for taking these TypeHero challenges? Well... THANK YOU!
+Have we said thank you, yet, for taking these lupleg challenges? Well... THANK YOU!
 
 You're doing yourself a great service by improving your knowledge of TypeScript. As you dig deeper, on your quest to become a TypeScript wizard, you're going to start noticing that there are almost two worlds. The "JavaScript" world and the "types" world.
 
 |                   | JavaScript world                                              | types world                                                                                                                                        |
 | ----------------- | ------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| variables         | `const`, `let`, function arguments                            | [type aliases](https://typehero.dev/challenge/type-aliases), [default generic arguments](https://typehero.dev/challenge/default-generic-arguments) |
+| variables         | `const`, `let`, function arguments                            | [type aliases](https://lupleg.dev/challenge/type-aliases), [default generic arguments](https://lupleg.dev/challenge/default-generic-arguments) |
 | operations        | `for` loops, `while` loops, recursion, higher-order functions | recursion, higher-order types                                                                                                                      |
 | runtime artifacts | ✅                                                            | ❌                                                                                                                                                 |
 | time of error     | runtime                                                       | compile time                                                                                                                                       |
@@ -84,7 +84,7 @@ type CreatePoint = typeof createPoint;
 //|TypeScript stuff
 ```
 
-Later, you're going to learn about ways to then do more operations on types. We're going to be extracting keys of objects <!-- todo [keys of objects](https://typehero.dev/challenge/object-keys)-->, and creating new types for return types <!-- todo [return types](https://typehero.dev/challenge/return-types) --> and parameters <!-- todo [parameters](https://typehero.dev/challenge/parameters) --> of functions.
+Later, you're going to learn about ways to then do more operations on types. We're going to be extracting keys of objects <!-- todo [keys of objects](https://lupleg.dev/challenge/object-keys)-->, and creating new types for return types <!-- todo [return types](https://lupleg.dev/challenge/return-types) --> and parameters <!-- todo [parameters](https://lupleg.dev/challenge/parameters) --> of functions.
 
 ## Solving This Challenge
 
