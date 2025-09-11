@@ -24,7 +24,6 @@ async function loadChallengesFromRepo() {
 
   const challengesToCreate: (Prisma.ChallengeCreateManyInput & { author: string })[] = [];
 
-  // Iterate through each subdirectory inside 'days'
   const dayDirectories = readdirSync(daysDir).filter((item) => {
     const itemPath = path.join(daysDir, item);
     return statSync(itemPath).isDirectory();
